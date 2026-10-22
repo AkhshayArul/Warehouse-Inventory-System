@@ -1,0 +1,12 @@
+{
+  "name": "warehouse-inventory-management-system",
+  "version": "1.0.0",
+  "description": "College DBMS Project - Warehouse Inventory Management System",
+  "scripts": {
+    "server": "node server/src/index.js",
+    "client": "npm.cmd run dev --prefix client",
+    "init-db": "$env:NODE_PATH='server/node_modules'; node database/init-db.js",
+    "verify": "$env:NODE_PATH='server/node_modules'; node database/verify-system.js",
+    "test-api": "node database/test-api.js"
+  }
+}
